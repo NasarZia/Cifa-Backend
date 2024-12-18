@@ -1,9 +1,10 @@
 {
-  "functions": {
-    "app.py": {
-      "runtime": "python@3.9"
+  "builds": [
+    {
+      "src": "app.py",
+      "use": "@vercel/python"
     }
-  },
+  ],
   "routes": [
     {
       "src": "/(.*)",
@@ -11,3 +12,4 @@
     }
   ]
 }
+
