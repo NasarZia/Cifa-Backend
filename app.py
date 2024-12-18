@@ -10,7 +10,7 @@ import imghdr
 
 app = Flask(__name__)
 
-CORS(app)
+CORS(app,resources={r"/*": {"origins": "*"}})
 
 # Load models
 with open('./models/brain_tumor_model.pkl', 'rb') as file:
